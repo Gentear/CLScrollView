@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2840141F1BD47C6100F89F21 /* CLCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2840141E1BD47C6100F89F21 /* CLCollectionCell.m */; };
 		28E2E6A81BD0EA0F0005AB58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E2E6A71BD0EA0F0005AB58 /* main.m */; };
 		28E2E6AB1BD0EA0F0005AB58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E2E6AA1BD0EA0F0005AB58 /* AppDelegate.m */; };
 		28E2E6AE1BD0EA0F0005AB58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E2E6AD1BD0EA0F0005AB58 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		28E2E6B61BD0EA0F0005AB58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E2E6B41BD0EA0F0005AB58 /* LaunchScreen.storyboard */; };
 		28E2E6C11BD0EA0F0005AB58 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E2E6C01BD0EA0F0005AB58 /* ______Tests.m */; };
 		28E2E6CC1BD0EA0F0005AB58 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E2E6CB1BD0EA0F0005AB58 /* ______UITests.m */; };
+		28E2E6DB1BD0EC230005AB58 /* headerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E2E6DA1BD0EC230005AB58 /* headerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2840141D1BD47C6100F89F21 /* CLCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCollectionCell.h; sourceTree = "<group>"; };
+		2840141E1BD47C6100F89F21 /* CLCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCollectionCell.m; sourceTree = "<group>"; };
 		28E2E6A31BD0EA0F0005AB58 /* 网易滚动视图.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网易滚动视图.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E2E6A71BD0EA0F0005AB58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28E2E6A91BD0EA0F0005AB58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		28E2E6C71BD0EA0F0005AB58 /* 网易滚动视图UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "网易滚动视图UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E2E6CB1BD0EA0F0005AB58 /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
 		28E2E6CD1BD0EA0F0005AB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28E2E6D91BD0EC230005AB58 /* headerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = headerView.h; sourceTree = "<group>"; };
+		28E2E6DA1BD0EC230005AB58 /* headerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = headerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				28E2E6AA1BD0EA0F0005AB58 /* AppDelegate.m */,
 				28E2E6AC1BD0EA0F0005AB58 /* ViewController.h */,
 				28E2E6AD1BD0EA0F0005AB58 /* ViewController.m */,
+				28E2E6D91BD0EC230005AB58 /* headerView.h */,
+				28E2E6DA1BD0EC230005AB58 /* headerView.m */,
+				2840141D1BD47C6100F89F21 /* CLCollectionCell.h */,
+				2840141E1BD47C6100F89F21 /* CLCollectionCell.m */,
 				28E2E6AF1BD0EA0F0005AB58 /* Main.storyboard */,
 				28E2E6B21BD0EA0F0005AB58 /* Assets.xcassets */,
 				28E2E6B41BD0EA0F0005AB58 /* LaunchScreen.storyboard */,
@@ -207,6 +217,7 @@
 				TargetAttributes = {
 					28E2E6A21BD0EA0F0005AB58 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = SD9N48WGSS;
 					};
 					28E2E6BB1BD0EA0F0005AB58 = {
 						CreatedOnToolsVersion = 7.0;
@@ -272,7 +283,9 @@
 			files = (
 				28E2E6AE1BD0EA0F0005AB58 /* ViewController.m in Sources */,
 				28E2E6AB1BD0EA0F0005AB58 /* AppDelegate.m in Sources */,
+				2840141F1BD47C6100F89F21 /* CLCollectionCell.m in Sources */,
 				28E2E6A81BD0EA0F0005AB58 /* main.m in Sources */,
+				28E2E6DB1BD0EC230005AB58 /* headerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "网易滚动视图/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "conglei.------";
@@ -424,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "网易滚动视图/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "conglei.------";
@@ -498,6 +513,7 @@
 				28E2E6D21BD0EA0F0005AB58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28E2E6D31BD0EA0F0005AB58 /* Build configuration list for PBXNativeTarget "网易滚动视图Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +522,7 @@
 				28E2E6D51BD0EA0F0005AB58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28E2E6D61BD0EA0F0005AB58 /* Build configuration list for PBXNativeTarget "网易滚动视图UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +531,7 @@
 				28E2E6D81BD0EA0F0005AB58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
