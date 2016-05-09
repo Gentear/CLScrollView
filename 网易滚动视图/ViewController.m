@@ -7,11 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "headerView.h"
-
-@interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate,headerViewDelegate>
+#import "CLHeaderView.h"
+#import "MJRefresh.h"
+#import "CLCollectionCell.h"
+#import "UICollectionViewCell+CreatCell.h"
+@interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate,CLHeaderViewDelegate>
 @property (nonatomic,weak)UICollectionView * collectionView;
-@property (nonatomic,weak)headerView * header;
+@property (nonatomic,weak)CLHeaderView * header;
 @end
 
 @implementation ViewController
@@ -20,29 +22,20 @@
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self creatUI];
-    headerView * header = [headerView creatHeaderView];
+    CLHeaderView * header = [CLHeaderView creatHeaderView];
     [self.view addSubview:header];
-    header.headerArray = @[@"头条",@"转疯了",@"搞笑",@"猎奇",@"社会",@"直播贴",@"科技"];
+    header.headerArray = @[@"头条",@"转疯了",@"搞笑",@"猎奇",@"社会",@"直播贴",@"头条",@"转疯了",@"搞笑",@"猎奇",@"社会",@"直播贴"];
     self.header = header;
-    self.header.delegates = self;
+    self.header.delegate = self;
 
 }
-
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    
     NSInteger page = scrollView.contentOffset.x/self.view.frame.size.width;
-    
-
-    
     [self.header setSelectedIndexAnimated:page];
-    
 }
-- (void)headerView:(headerView *)header selectedIndexChanged:(NSUInteger)index{
-    
+- (void)headerView:(CLHeaderView *)header selectedIndexChanged:(NSUInteger)index{
     [self.collectionView scrollRectToVisible:CGRectMake(index * self.view.frame.size.width, 0, self.view.frame.size.width, self.view.frame.size.height) animated:YES];
-    
 }
-
 - (void)creatUI{
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
     
@@ -59,37 +52,25 @@
     collectionView.dataSource = self;
     [self.view addSubview:collectionView];
     collectionView.pagingEnabled = YES;
-    
+    collectionView.bounces = NO;
     self.collectionView = collectionView;
-    //注册
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-    
     return 1;
-    
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    
-    return 7;
-    
+    return self.header.headerArray.count;
 }
 //创建cell
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    CLCollectionCell *cell = [CLCollectionCell cellWithNibcollection:collectionView withIndex:indexPath];
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    if (indexPath.row %2 == 0) {
-        
-        cell.backgroundColor = [UIColor redColor];
-        
-    }else{
-        
-        
-        cell.backgroundColor = [UIColor grayColor];
-        
-    }
     return cell;
+}
+- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath{
+    CLCollectionCell *myCell = (CLCollectionCell *)cell;
+    [myCell.tableView.mj_header endRefreshing];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
