@@ -27,7 +27,6 @@
     header.headerArray = @[@"头条",@"转疯了",@"搞笑",@"猎奇",@"社会",@"直播贴",@"头条",@"转疯了",@"搞笑",@"猎奇",@"社会",@"直播贴"];
     self.header = header;
     self.header.delegate = self;
-
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     NSInteger page = scrollView.contentOffset.x/self.view.frame.size.width;

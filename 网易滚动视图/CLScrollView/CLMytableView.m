@@ -8,11 +8,6 @@
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define ScreenBounds [UIScreen mainScreen].bounds
-#define BarHeight 20
-#define NVHeight 44
-#define TBHeight 44
-
-#define BackgroundColor [UIColor colorWithRed:226.0/255.0 green:226.0/255.0 blue:226.0/255.0 alpha:1]
 #import "CLMytableView.h"
 #import "MJRefresh.h"
 @interface CLMytableView()<UITableViewDataSource,UITableViewDelegate>
@@ -35,7 +30,7 @@
 - (void)creatUI{
     self.mj_header =  [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         // 进入刷新状态后会自动调用这个block
-        self.index = 10;
+        self.index = 80;
         [self reloadData];
         [self.mj_header endRefreshing];
     }];
@@ -43,7 +38,7 @@
     self.mj_footer =  [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
      
         // 进入刷新状态后会自动调用这个block
-        self.index += 10;
+        self.index += 30;
         [self reloadData];
         [self.mj_footer endRefreshing];
 
@@ -59,7 +54,7 @@
         
     }
     
-    cell.textLabel.text = @"123";
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
     
     return cell;
 }
@@ -74,10 +69,10 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 20;
+    return 0.1;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 1;
+    return 0.1;
 }
 
 @end

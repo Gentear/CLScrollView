@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "80108EC4095A35619A72563A7B96C5BC3F472BFC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "99b62c64-fd49-6d46-a362-bd03e5a0d832++6926" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "80108EC4095A35619A72563A7B96C5BC3F472BFC" : 0,
+    "99b62c64-fd49-6d46-a362-bd03e5a0d832++6926" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FEEB9F5A-3234-4450-B525-BAD7BCAF367C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "80108EC4095A35619A72563A7B96C5BC3F472BFC" : "CLScrollView\/",
+    "99b62c64-fd49-6d46-a362-bd03e5a0d832++6926" : "CLScrollView\/%E7%BD%91%E6%98%93%E6%BB%9A%E5%8A%A8%E8%A7%86%E5%9B%BE\/MJRefresh\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "网易滚动视图",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "网易滚动视图.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Gentear\/CLScrollView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "80108EC4095A35619A72563A7B96C5BC3F472BFC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/115.28.84.54\/svn\/projects",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "99b62c64-fd49-6d46-a362-bd03e5a0d832++6926"
+    }
+  ]
+}
