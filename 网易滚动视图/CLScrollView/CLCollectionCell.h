@@ -11,4 +11,5 @@
 
 @interface CLCollectionCell : UICollectionViewCell
 @property (strong,nonatomic) CLMytableView *tableView;
+- (void)prepareForReuse;
 @end

@@ -7,13 +7,9 @@
 //
 
 #import "CLCollectionCell.h"
-
 @interface CLCollectionCell()
 @end
 @implementation CLCollectionCell
-- (void)awakeFromNib{
-    [self tableView];
-}
 - (void)prepareForReuse{
     //防止下拉后没有刷新成功点击其他按钮导致的刷新控件没有回复原状
     if (self.tableView.contentOffset.y == -54) {
