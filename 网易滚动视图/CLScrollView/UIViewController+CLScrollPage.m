@@ -59,6 +59,7 @@
     self.cl_collectionView.bounces = NO;
     [self.view addSubview:self.cl_collectionView];
     self.cl_header = [CLHeaderView creatHeaderView];
+    self.cl_header.delegate = self;
     [self.view addSubview:self.cl_header];
 }
 
