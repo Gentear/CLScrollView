@@ -7,3 +7,11 @@
 self.cl_header.headerArray = @[@"头条",@"转疯了",@"搞笑",@"猎奇",@"社会",@"直播贴",@"头条",@"转疯了",@"搞笑",@"猎奇",@"社会",@"直播贴"];
 [self.cl_collectionView reloadData];
 ```
+>添加各个页面的cell并反回
+```
+[self setCl_CellBlock:^UICollectionViewCell *(NSIndexPath *indexPath, UICollectionView *collectionView) {
+        CLCollectionCell *cell = [CLCollectionCell cellWithcollection:collectionView withIndex:indexPath];
+        [cell prepareForReuse];
+        return cell;
+    }];
+```
