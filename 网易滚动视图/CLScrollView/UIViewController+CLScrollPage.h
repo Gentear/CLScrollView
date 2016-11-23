@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "CLHeaderView.h"
+
+typedef UICollectionViewCell * (^CellForItemAtIndexPathBlock)(NSIndexPath *indexPath,UICollectionView *collectionView);
+
 @interface UIViewController (CLScrollPage)
 /** <#name#> */
 @property (nonatomic,strong)UICollectionView * cl_collectionView;
@@ -16,5 +19,9 @@
  */
 @property (nonatomic,strong)CLHeaderView * cl_header;
 
+/** <#name#> */
+@property (nonatomic,copy)CellForItemAtIndexPathBlock cl_CellBlock;
 - (void)addScrollPage;
+
+- (void)setCl_CellBlock:(CellForItemAtIndexPathBlock)cl_CellBlock;
 @end

@@ -32,7 +32,7 @@
         // 进入刷新状态后会自动调用这个block
         self.index = 80;
         [self reloadData];
-        [self.mj_header endRefreshing];
+//        [self.mj_header endRefreshing];
     }];
     [self.mj_header beginRefreshing];
     self.mj_footer =  [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{

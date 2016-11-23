@@ -13,7 +13,7 @@
 @interface CLHeaderView()
 @property (nonatomic, strong) UIView * indicatorView;
 @property (strong,nonatomic) NSMutableArray * AllBtnArray;
-@property (nonatomic, weak) UIButton * selectedButton;
+@property (nonatomic, strong) UIButton * selectedButton;
 @property (weak,nonatomic) UIScrollView *scrollView;
 @end
 @implementation CLHeaderView
@@ -77,7 +77,6 @@
         //UIlabel控件上设置的字体号,一定要与动态计算字体号统一
         NSDictionary * attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:15]};
         size = [title boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
-        
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setTitle:title forState:UIControlStateNormal];
         button.titleLabel.font = [UIFont systemFontOfSize:15];
@@ -104,7 +103,7 @@
         return nil;
     }
     if (self.selectedIndex > self.AllBtnArray.count - 1) {
-        return self.AllBtnArray[self.AllBtnArray.count - 1];
+        return self.AllBtnArray[0];
     }
     return self.AllBtnArray[self.selectedIndex];
 }

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28E2E6A21BD0EA0F0005AB58"
-               BuildableName = "&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;.app"
-               BlueprintName = "&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;"
-               ReferencedContainer = "container:&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;.xcodeproj">
+               BuildableName = "CLScrollView.app"
+               BlueprintName = "CLScrollView"
+               ReferencedContainer = "container:CLScrollView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28E2E6BB1BD0EA0F0005AB58"
-               BuildableName = "&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;Tests.xctest"
-               BlueprintName = "&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;Tests"
-               ReferencedContainer = "container:&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;.xcodeproj">
+               BuildableName = "CLScrollView.xctest"
+               BlueprintName = "CLScrollViewTests"
+               ReferencedContainer = "container:CLScrollView.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28E2E6C61BD0EA0F0005AB58"
-               BuildableName = "&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;UITests.xctest"
-               BlueprintName = "&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;UITests"
-               ReferencedContainer = "container:&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;.xcodeproj">
+               BuildableName = "CLScrollView.xctest"
+               BlueprintName = "CLScrollViewUITests"
+               ReferencedContainer = "container:CLScrollView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28E2E6A21BD0EA0F0005AB58"
-            BuildableName = "&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;.app"
-            BlueprintName = "&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;"
-            ReferencedContainer = "container:&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;.xcodeproj">
+            BuildableName = "CLScrollView.app"
+            BlueprintName = "CLScrollView"
+            ReferencedContainer = "container:CLScrollView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28E2E6A21BD0EA0F0005AB58"
-            BuildableName = "&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;.app"
-            BlueprintName = "&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;"
-            ReferencedContainer = "container:&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;.xcodeproj">
+            BuildableName = "CLScrollView.app"
+            BlueprintName = "CLScrollView"
+            ReferencedContainer = "container:CLScrollView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28E2E6A21BD0EA0F0005AB58"
-            BuildableName = "&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;.app"
-            BlueprintName = "&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;"
-            ReferencedContainer = "container:&#x7f51;&#x6613;&#x6eda;&#x52a8;&#x89c6;&#x56fe;.xcodeproj">
+            BuildableName = "CLScrollView.app"
+            BlueprintName = "CLScrollView"
+            ReferencedContainer = "container:CLScrollView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

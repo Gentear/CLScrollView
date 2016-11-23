@@ -13,8 +13,6 @@
 		28E2E6B11BD0EA0F0005AB58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E2E6AF1BD0EA0F0005AB58 /* Main.storyboard */; };
 		28E2E6B31BD0EA0F0005AB58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E2E6B21BD0EA0F0005AB58 /* Assets.xcassets */; };
 		28E2E6B61BD0EA0F0005AB58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E2E6B41BD0EA0F0005AB58 /* LaunchScreen.storyboard */; };
-		F3359D5B1CE03ABC0021250A /* CLMytableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3359D5A1CE03ABC0021250A /* CLMytableView.m */; };
-		F3359D5F1CE03B030021250A /* CLCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3359D5D1CE03B030021250A /* CLCollectionCell.m */; };
 		F3359D8E1CE03D0B0021250A /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3359D641CE03D0A0021250A /* MJRefreshAutoFooter.m */; };
 		F3359D8F1CE03D0B0021250A /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3359D661CE03D0A0021250A /* MJRefreshBackFooter.m */; };
 		F3359D901CE03D0B0021250A /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F3359D681CE03D0A0021250A /* MJRefreshComponent.m */; };
@@ -37,6 +35,8 @@
 		F33D2D151CDDCA3600DDA83C /* CLHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F33D2D131CDDCA3600DDA83C /* CLHeaderView.m */; };
 		F3E1D7991DE5869B005440BF /* UIViewController+CLScrollPage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E1D7981DE5869B005440BF /* UIViewController+CLScrollPage.m */; };
 		F3E1D79C1DE586CD005440BF /* UICollectionViewCell+CreatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E1D79B1DE586CD005440BF /* UICollectionViewCell+CreatCell.m */; };
+		F3E1D7A11DE5BEA8005440BF /* CLCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E1D79E1DE5BEA8005440BF /* CLCollectionCell.m */; };
+		F3E1D7A21DE5BEA8005440BF /* CLMytableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E1D7A01DE5BEA8005440BF /* CLMytableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		28E2E6A31BD0EA0F0005AB58 /* 网易滚动视图.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网易滚动视图.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E2E6A31BD0EA0F0005AB58 /* CLScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E2E6A71BD0EA0F0005AB58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28E2E6A91BD0EA0F0005AB58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28E2E6AA1BD0EA0F0005AB58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,12 +67,8 @@
 		28E2E6B21BD0EA0F0005AB58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28E2E6B51BD0EA0F0005AB58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28E2E6B71BD0EA0F0005AB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28E2E6BC1BD0EA0F0005AB58 /* 网易滚动视图Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "网易滚动视图Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28E2E6C71BD0EA0F0005AB58 /* 网易滚动视图UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "网易滚动视图UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3359D591CE03ABC0021250A /* CLMytableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMytableView.h; sourceTree = "<group>"; };
-		F3359D5A1CE03ABC0021250A /* CLMytableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMytableView.m; sourceTree = "<group>"; };
-		F3359D5C1CE03B030021250A /* CLCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCollectionCell.h; sourceTree = "<group>"; };
-		F3359D5D1CE03B030021250A /* CLCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCollectionCell.m; sourceTree = "<group>"; };
+		28E2E6BC1BD0EA0F0005AB58 /* CLScrollView.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLScrollView.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E2E6C71BD0EA0F0005AB58 /* CLScrollView.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLScrollView.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3359D631CE03D0A0021250A /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		F3359D641CE03D0A0021250A /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		F3359D651CE03D0A0021250A /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -117,6 +113,10 @@
 		F3E1D7981DE5869B005440BF /* UIViewController+CLScrollPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CLScrollPage.m"; sourceTree = "<group>"; };
 		F3E1D79A1DE586CD005440BF /* UICollectionViewCell+CreatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+CreatCell.h"; sourceTree = "<group>"; };
 		F3E1D79B1DE586CD005440BF /* UICollectionViewCell+CreatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+CreatCell.m"; sourceTree = "<group>"; };
+		F3E1D79D1DE5BEA8005440BF /* CLCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCollectionCell.h; sourceTree = "<group>"; };
+		F3E1D79E1DE5BEA8005440BF /* CLCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCollectionCell.m; sourceTree = "<group>"; };
+		F3E1D79F1DE5BEA8005440BF /* CLMytableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMytableView.h; sourceTree = "<group>"; };
+		F3E1D7A01DE5BEA8005440BF /* CLMytableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMytableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,7 @@
 		28E2E69A1BD0EA0F0005AB58 = {
 			isa = PBXGroup;
 			children = (
-				28E2E6A51BD0EA0F0005AB58 /* 网易滚动视图 */,
+				28E2E6A51BD0EA0F0005AB58 /* CLScrollView */,
 				28E2E6A41BD0EA0F0005AB58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,14 +155,14 @@
 		28E2E6A41BD0EA0F0005AB58 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28E2E6A31BD0EA0F0005AB58 /* 网易滚动视图.app */,
-				28E2E6BC1BD0EA0F0005AB58 /* 网易滚动视图Tests.xctest */,
-				28E2E6C71BD0EA0F0005AB58 /* 网易滚动视图UITests.xctest */,
+				28E2E6A31BD0EA0F0005AB58 /* CLScrollView.app */,
+				28E2E6BC1BD0EA0F0005AB58 /* CLScrollView.xctest */,
+				28E2E6C71BD0EA0F0005AB58 /* CLScrollView.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		28E2E6A51BD0EA0F0005AB58 /* 网易滚动视图 */ = {
+		28E2E6A51BD0EA0F0005AB58 /* CLScrollView */ = {
 			isa = PBXGroup;
 			children = (
 				F3359D611CE03D0A0021250A /* MJRefresh */,
@@ -171,12 +171,17 @@
 				28E2E6AA1BD0EA0F0005AB58 /* AppDelegate.m */,
 				28E2E6AC1BD0EA0F0005AB58 /* ViewController.h */,
 				28E2E6AD1BD0EA0F0005AB58 /* ViewController.m */,
+				F3E1D79D1DE5BEA8005440BF /* CLCollectionCell.h */,
+				F3E1D79E1DE5BEA8005440BF /* CLCollectionCell.m */,
+				F3E1D79F1DE5BEA8005440BF /* CLMytableView.h */,
+				F3E1D7A01DE5BEA8005440BF /* CLMytableView.m */,
 				28E2E6AF1BD0EA0F0005AB58 /* Main.storyboard */,
 				28E2E6B21BD0EA0F0005AB58 /* Assets.xcassets */,
 				28E2E6B41BD0EA0F0005AB58 /* LaunchScreen.storyboard */,
 				28E2E6B71BD0EA0F0005AB58 /* Info.plist */,
 				28E2E6A61BD0EA0F0005AB58 /* Supporting Files */,
 			);
+			name = CLScrollView;
 			path = "网易滚动视图";
 			sourceTree = "<group>";
 		};
@@ -288,12 +293,8 @@
 				F3E1D79B1DE586CD005440BF /* UICollectionViewCell+CreatCell.m */,
 				F3E1D7971DE5869B005440BF /* UIViewController+CLScrollPage.h */,
 				F3E1D7981DE5869B005440BF /* UIViewController+CLScrollPage.m */,
-				F3359D5C1CE03B030021250A /* CLCollectionCell.h */,
-				F3359D5D1CE03B030021250A /* CLCollectionCell.m */,
 				F33D2D121CDDCA3600DDA83C /* CLHeaderView.h */,
 				F33D2D131CDDCA3600DDA83C /* CLHeaderView.m */,
-				F3359D591CE03ABC0021250A /* CLMytableView.h */,
-				F3359D5A1CE03ABC0021250A /* CLMytableView.m */,
 			);
 			path = CLScrollView;
 			sourceTree = "<group>";
@@ -301,9 +302,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28E2E6A21BD0EA0F0005AB58 /* 网易滚动视图 */ = {
+		28E2E6A21BD0EA0F0005AB58 /* CLScrollView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28E2E6D01BD0EA0F0005AB58 /* Build configuration list for PBXNativeTarget "网易滚动视图" */;
+			buildConfigurationList = 28E2E6D01BD0EA0F0005AB58 /* Build configuration list for PBXNativeTarget "CLScrollView" */;
 			buildPhases = (
 				28E2E69F1BD0EA0F0005AB58 /* Sources */,
 				28E2E6A01BD0EA0F0005AB58 /* Frameworks */,
@@ -313,14 +314,14 @@
 			);
 			dependencies = (
 			);
-			name = "网易滚动视图";
+			name = CLScrollView;
 			productName = "网易滚动视图";
-			productReference = 28E2E6A31BD0EA0F0005AB58 /* 网易滚动视图.app */;
+			productReference = 28E2E6A31BD0EA0F0005AB58 /* CLScrollView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		28E2E6BB1BD0EA0F0005AB58 /* 网易滚动视图Tests */ = {
+		28E2E6BB1BD0EA0F0005AB58 /* CLScrollViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28E2E6D31BD0EA0F0005AB58 /* Build configuration list for PBXNativeTarget "网易滚动视图Tests" */;
+			buildConfigurationList = 28E2E6D31BD0EA0F0005AB58 /* Build configuration list for PBXNativeTarget "CLScrollViewTests" */;
 			buildPhases = (
 				28E2E6B81BD0EA0F0005AB58 /* Sources */,
 				28E2E6B91BD0EA0F0005AB58 /* Frameworks */,
@@ -331,14 +332,14 @@
 			dependencies = (
 				28E2E6BE1BD0EA0F0005AB58 /* PBXTargetDependency */,
 			);
-			name = "网易滚动视图Tests";
+			name = CLScrollViewTests;
 			productName = "网易滚动视图Tests";
-			productReference = 28E2E6BC1BD0EA0F0005AB58 /* 网易滚动视图Tests.xctest */;
+			productReference = 28E2E6BC1BD0EA0F0005AB58 /* CLScrollView.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		28E2E6C61BD0EA0F0005AB58 /* 网易滚动视图UITests */ = {
+		28E2E6C61BD0EA0F0005AB58 /* CLScrollViewUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28E2E6D61BD0EA0F0005AB58 /* Build configuration list for PBXNativeTarget "网易滚动视图UITests" */;
+			buildConfigurationList = 28E2E6D61BD0EA0F0005AB58 /* Build configuration list for PBXNativeTarget "CLScrollViewUITests" */;
 			buildPhases = (
 				28E2E6C31BD0EA0F0005AB58 /* Sources */,
 				28E2E6C41BD0EA0F0005AB58 /* Frameworks */,
@@ -349,9 +350,9 @@
 			dependencies = (
 				28E2E6C91BD0EA0F0005AB58 /* PBXTargetDependency */,
 			);
-			name = "网易滚动视图UITests";
+			name = CLScrollViewUITests;
 			productName = "网易滚动视图UITests";
-			productReference = 28E2E6C71BD0EA0F0005AB58 /* 网易滚动视图UITests.xctest */;
+			productReference = 28E2E6C71BD0EA0F0005AB58 /* CLScrollView.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -377,7 +378,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28E2E69E1BD0EA0F0005AB58 /* Build configuration list for PBXProject "网易滚动视图" */;
+			buildConfigurationList = 28E2E69E1BD0EA0F0005AB58 /* Build configuration list for PBXProject "CLScrollView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -390,9 +391,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28E2E6A21BD0EA0F0005AB58 /* 网易滚动视图 */,
-				28E2E6BB1BD0EA0F0005AB58 /* 网易滚动视图Tests */,
-				28E2E6C61BD0EA0F0005AB58 /* 网易滚动视图UITests */,
+				28E2E6A21BD0EA0F0005AB58 /* CLScrollView */,
+				28E2E6BB1BD0EA0F0005AB58 /* CLScrollViewTests */,
+				28E2E6C61BD0EA0F0005AB58 /* CLScrollViewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -430,7 +431,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3359D5F1CE03B030021250A /* CLCollectionCell.m in Sources */,
 				F3359D961CE03D0B0021250A /* MJRefreshBackGifFooter.m in Sources */,
 				F3359D931CE03D0B0021250A /* MJRefreshAutoGifFooter.m in Sources */,
 				F3359D9A1CE03D0B0021250A /* MJRefreshNormalHeader.m in Sources */,
@@ -439,11 +439,11 @@
 				28E2E6AB1BD0EA0F0005AB58 /* AppDelegate.m in Sources */,
 				F3359D951CE03D0B0021250A /* MJRefreshAutoStateFooter.m in Sources */,
 				F3359D9D1CE03D0B0021250A /* MJRefreshConst.m in Sources */,
-				F3359D5B1CE03ABC0021250A /* CLMytableView.m in Sources */,
 				F3359DA01CE03D0B0021250A /* UIView+MJExtension.m in Sources */,
 				28E2E6A81BD0EA0F0005AB58 /* main.m in Sources */,
 				F3359D991CE03D0B0021250A /* MJRefreshGifHeader.m in Sources */,
 				F3359D911CE03D0B0021250A /* MJRefreshFooter.m in Sources */,
+				F3E1D7A11DE5BEA8005440BF /* CLCollectionCell.m in Sources */,
 				F3E1D79C1DE586CD005440BF /* UICollectionViewCell+CreatCell.m in Sources */,
 				F3359D9E1CE03D0B0021250A /* UIScrollView+MJExtension.m in Sources */,
 				F3359D9F1CE03D0B0021250A /* UIScrollView+MJRefresh.m in Sources */,
@@ -453,6 +453,7 @@
 				F3359D921CE03D0B0021250A /* MJRefreshHeader.m in Sources */,
 				F33D2D151CDDCA3600DDA83C /* CLHeaderView.m in Sources */,
 				F3359D941CE03D0B0021250A /* MJRefreshAutoNormalFooter.m in Sources */,
+				F3E1D7A21DE5BEA8005440BF /* CLMytableView.m in Sources */,
 				F3359D8E1CE03D0B0021250A /* MJRefreshAutoFooter.m in Sources */,
 				F3359D971CE03D0B0021250A /* MJRefreshBackNormalFooter.m in Sources */,
 				F3359D8F1CE03D0B0021250A /* MJRefreshBackFooter.m in Sources */,
@@ -478,12 +479,12 @@
 /* Begin PBXTargetDependency section */
 		28E2E6BE1BD0EA0F0005AB58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28E2E6A21BD0EA0F0005AB58 /* 网易滚动视图 */;
+			target = 28E2E6A21BD0EA0F0005AB58 /* CLScrollView */;
 			targetProxy = 28E2E6BD1BD0EA0F0005AB58 /* PBXContainerItemProxy */;
 		};
 		28E2E6C91BD0EA0F0005AB58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28E2E6A21BD0EA0F0005AB58 /* 网易滚动视图 */;
+			target = 28E2E6A21BD0EA0F0005AB58 /* CLScrollView */;
 			targetProxy = 28E2E6C81BD0EA0F0005AB58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -598,7 +599,7 @@
 				INFOPLIST_FILE = "网易滚动视图/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "conglei.------";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CLScrollView;
 			};
 			name = Debug;
 		};
@@ -610,7 +611,7 @@
 				INFOPLIST_FILE = "网易滚动视图/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "conglei.------";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CLScrollView;
 			};
 			name = Release;
 		};
@@ -621,8 +622,8 @@
 				INFOPLIST_FILE = "网易滚动视图Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "conglei.------Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/网易滚动视图.app/网易滚动视图";
+				PRODUCT_NAME = CLScrollView;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CLScrollView.app/CLScrollView";
 			};
 			name = Debug;
 		};
@@ -633,8 +634,8 @@
 				INFOPLIST_FILE = "网易滚动视图Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "conglei.------Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/网易滚动视图.app/网易滚动视图";
+				PRODUCT_NAME = CLScrollView;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CLScrollView.app/CLScrollView";
 			};
 			name = Release;
 		};
@@ -644,7 +645,7 @@
 				INFOPLIST_FILE = "网易滚动视图UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "conglei.------UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CLScrollView;
 				TEST_TARGET_NAME = "网易滚动视图";
 				USES_XCTRUNNER = YES;
 			};
@@ -656,7 +657,7 @@
 				INFOPLIST_FILE = "网易滚动视图UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "conglei.------UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CLScrollView;
 				TEST_TARGET_NAME = "网易滚动视图";
 				USES_XCTRUNNER = YES;
 			};
@@ -665,7 +666,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28E2E69E1BD0EA0F0005AB58 /* Build configuration list for PBXProject "网易滚动视图" */ = {
+		28E2E69E1BD0EA0F0005AB58 /* Build configuration list for PBXProject "CLScrollView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28E2E6CE1BD0EA0F0005AB58 /* Debug */,
@@ -674,7 +675,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28E2E6D01BD0EA0F0005AB58 /* Build configuration list for PBXNativeTarget "网易滚动视图" */ = {
+		28E2E6D01BD0EA0F0005AB58 /* Build configuration list for PBXNativeTarget "CLScrollView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28E2E6D11BD0EA0F0005AB58 /* Debug */,
@@ -683,7 +684,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28E2E6D31BD0EA0F0005AB58 /* Build configuration list for PBXNativeTarget "网易滚动视图Tests" */ = {
+		28E2E6D31BD0EA0F0005AB58 /* Build configuration list for PBXNativeTarget "CLScrollViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28E2E6D41BD0EA0F0005AB58 /* Debug */,
@@ -692,7 +693,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28E2E6D61BD0EA0F0005AB58 /* Build configuration list for PBXNativeTarget "网易滚动视图UITests" */ = {
+		28E2E6D61BD0EA0F0005AB58 /* Build configuration list for PBXNativeTarget "CLScrollViewUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28E2E6D71BD0EA0F0005AB58 /* Debug */,

@@ -23,6 +23,11 @@
     [super viewDidLoad];
     [self addScrollPage];
     self.cl_header.headerArray = @[@"头条",@"转疯了",@"搞笑",@"猎奇",@"社会",@"直播贴",@"头条",@"转疯了",@"搞笑",@"猎奇",@"社会",@"直播贴"];
+    [self setCl_CellBlock:^UICollectionViewCell *(NSIndexPath *indexPath, UICollectionView *collectionView) {
+        CLCollectionCell *cell = [CLCollectionCell cellWithcollection:collectionView withIndex:indexPath];
+        [cell prepareForReuse];
+        return cell;
+    }];
     [self.cl_collectionView reloadData];
 }
 - (void)didReceiveMemoryWarning {
