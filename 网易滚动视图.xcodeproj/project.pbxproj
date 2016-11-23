@@ -13,8 +13,6 @@
 		28E2E6B11BD0EA0F0005AB58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E2E6AF1BD0EA0F0005AB58 /* Main.storyboard */; };
 		28E2E6B31BD0EA0F0005AB58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E2E6B21BD0EA0F0005AB58 /* Assets.xcassets */; };
 		28E2E6B61BD0EA0F0005AB58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E2E6B41BD0EA0F0005AB58 /* LaunchScreen.storyboard */; };
-		28E2E6C11BD0EA0F0005AB58 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E2E6C01BD0EA0F0005AB58 /* ______Tests.m */; };
-		28E2E6CC1BD0EA0F0005AB58 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E2E6CB1BD0EA0F0005AB58 /* ______UITests.m */; };
 		F3359D5B1CE03ABC0021250A /* CLMytableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3359D5A1CE03ABC0021250A /* CLMytableView.m */; };
 		F3359D5F1CE03B030021250A /* CLCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3359D5D1CE03B030021250A /* CLCollectionCell.m */; };
 		F3359D8E1CE03D0B0021250A /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3359D641CE03D0A0021250A /* MJRefreshAutoFooter.m */; };
@@ -70,11 +68,7 @@
 		28E2E6B51BD0EA0F0005AB58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28E2E6B71BD0EA0F0005AB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28E2E6BC1BD0EA0F0005AB58 /* 网易滚动视图Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "网易滚动视图Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28E2E6C01BD0EA0F0005AB58 /* ______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______Tests.m"; sourceTree = "<group>"; };
-		28E2E6C21BD0EA0F0005AB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28E2E6C71BD0EA0F0005AB58 /* 网易滚动视图UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "网易滚动视图UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28E2E6CB1BD0EA0F0005AB58 /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
-		28E2E6CD1BD0EA0F0005AB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3359D591CE03ABC0021250A /* CLMytableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMytableView.h; sourceTree = "<group>"; };
 		F3359D5A1CE03ABC0021250A /* CLMytableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMytableView.m; sourceTree = "<group>"; };
 		F3359D5C1CE03B030021250A /* CLCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCollectionCell.h; sourceTree = "<group>"; };
@@ -154,8 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				28E2E6A51BD0EA0F0005AB58 /* 网易滚动视图 */,
-				28E2E6BF1BD0EA0F0005AB58 /* 网易滚动视图Tests */,
-				28E2E6CA1BD0EA0F0005AB58 /* 网易滚动视图UITests */,
 				28E2E6A41BD0EA0F0005AB58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -194,24 +186,6 @@
 				28E2E6A71BD0EA0F0005AB58 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		28E2E6BF1BD0EA0F0005AB58 /* 网易滚动视图Tests */ = {
-			isa = PBXGroup;
-			children = (
-				28E2E6C01BD0EA0F0005AB58 /* ______Tests.m */,
-				28E2E6C21BD0EA0F0005AB58 /* Info.plist */,
-			);
-			path = "网易滚动视图Tests";
-			sourceTree = "<group>";
-		};
-		28E2E6CA1BD0EA0F0005AB58 /* 网易滚动视图UITests */ = {
-			isa = PBXGroup;
-			children = (
-				28E2E6CB1BD0EA0F0005AB58 /* ______UITests.m */,
-				28E2E6CD1BD0EA0F0005AB58 /* Info.plist */,
-			);
-			path = "网易滚动视图UITests";
 			sourceTree = "<group>";
 		};
 		F3359D611CE03D0A0021250A /* MJRefresh */ = {
@@ -489,7 +463,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28E2E6C11BD0EA0F0005AB58 /* ______Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +470,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28E2E6CC1BD0EA0F0005AB58 /* ______UITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
