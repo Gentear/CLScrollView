@@ -73,6 +73,11 @@ char * const cl_CellForItemAtIndexPathBlock = "CellForItemAtIndexPathBlock";
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored"-Wobjc-protocol-method-implementation"
 #pragma mark - UIScrollViewDelegate
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    //内容左上角位置 - 到滚动视图左上角的偏移
+    NSLog(@"offset x=%f y=%f",scrollView.contentOffset.x,scrollView.contentOffset.y);
+}
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     NSInteger page = scrollView.contentOffset.x/self.view.frame.size.width;
     [self.cl_header setSelectedIndexAnimated:page];
